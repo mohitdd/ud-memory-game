@@ -35,8 +35,8 @@ function populateCards() {
 function endGame() {
     clearTimeout(timerPtr);
     swal({
-            title: "Congratulations! You Won!",
-            text: `with ${moves} Moves and ${document.querySelectorAll(".fa-star").length} star!
+            title: "Congratulations!",
+            text: `You just won the game in ${timeCount} seconds with ${document.querySelectorAll(".fa-star").length}/3 star rating.
                                 Do you want to play Again?`,
             icon: "success",
             buttons: ["No", "Yes"],
